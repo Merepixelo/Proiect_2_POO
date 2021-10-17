@@ -1,21 +1,24 @@
 package Units;
 
 public class Thorn {
-    private String nume="Thorn the Unbound";
 
-    private double chance=1.0;
+    private String nume="Thorn";
+    protected String title="The Undanted";
 
-    private double base_atk=0.0;
-    private double base_def=0.0;
-    private double base_hp=0.0;
+    private double chance=60.0;
 
-    public double upgrade_atk=0.0;
-    public double upgrade_def=0.0;
-    public double upgrade_hp=0.0;
 
-    protected double max_atk=0.0;
-    protected double max_def=0.0;
-    protected double max_hp=0.0;
+    private int base_atk=1700;
+    private int base_def=700;
+    private int base_hp=8000;
+
+    public int upgrade_atk=150;
+    public int upgrade_def=150;
+    public int upgrade_hp=150;
+
+    private int max_atk=0;
+    private int max_def=0;
+    private int max_hp=0;
 
 
 
