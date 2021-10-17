@@ -1,8 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        //Vectorul cu sansele prestabuilite
+        double[] Arr_chance = { 1.0,2.0,3.0,4.0};
+        //Vectorul care stocheaza datele aleatorii
+        int[] Arr2_chance;
+        Arr2_chance=new int [10];
+        int range=4-1+1;//max-min-1
+        int k=0;
+
+            for(int i=0;i<10;i++){
+
+                int rand=(int)(Math.random()*range)+1;
+                Arr2_chance[i] = rand;
+                System.out.println(Arr2_chance[i]);
+
+        }
+
     }
+
 }
 
 
@@ -32,7 +53,7 @@ Cerinte implementate in proiect:
 ->metodelor:-private: Nume,base_atk,base_def,base_hp,
             -public: upgrade_atk,upgrade_def,upgrade_hp
             -protected: max_atk,max_def,max_hp
-->
+->vector: din pool-ul unitati alege dupa sanse
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Cerințe:

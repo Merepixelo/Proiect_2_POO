@@ -5,7 +5,7 @@ public class Rylanor {
     private String nume="Rylanor (Dreadnoght)";
     protected String title="The Ancient of Rites";
 
-    private double chance=0.5;
+    private double unit_numer=1.0;
 
     private int base_atk=1500;
     private int base_def=900;

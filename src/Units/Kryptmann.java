@@ -5,8 +5,7 @@ public class Kryptmann {
     private String nume="Kryptmann";
     protected String title="Aspiring Inqusitor";
 
-    private double chance=75.0;
-
+    private double unit_numer=4.0;
 
     private int base_atk=700;
     private int base_def=990;

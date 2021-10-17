@@ -5,8 +5,7 @@ public class Thorn {
     private String nume="Thorn";
     protected String title="The Undanted";
 
-    private double chance=60.0;
-
+    private double unit_numer=3.0;
 
     private int base_atk=1700;
     private int base_def=700;

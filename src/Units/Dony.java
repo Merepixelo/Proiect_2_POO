@@ -4,7 +4,7 @@ public class Dony {
     private String nume="Dony Salvadore";
     protected String title="Deadeye Drunk";
 
-    private double chance=1.0;
+    private double unit_numer=2.0;
 
     private int base_atk=1000;
     private int base_def=600;
