@@ -1,30 +1,22 @@
-import java.io.*;
-import java.util.*;
+ /* double[] Arr_chance = { 1.0,2.0,3.0,4.0};*/
 import java.lang.Math;
 
-public class Main {
+ public class Main {
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
-        //Vectorul cu sansele prestabuilite
-        double[] Arr_chance = { 1.0,2.0,3.0,4.0};
-        //Vectorul care stocheaza datele aleatorii
-        int[] Arr2_chance;
-        Arr2_chance=new int [10];
-        int range=4-1+1;//max-min-1
-        int k=0;
+         //Vectorul care stocheaza datele aleatorii
+         int[] Arr_chance;
+         Arr_chance=new int [10];
+         int range=4-1+1;//max-min-1
 
-            for(int i=0;i<10;i++){
-
-                int rand=(int)(Math.random()*range)+1;
-                Arr2_chance[i] = rand;
-                System.out.println(Arr2_chance[i]);
-
-        }
-
-    }
-
-}
+         for(int i=0;i<10;i++){
+             int rand=(int)(Math.random()*range)+1;
+             Arr_chance[i] = rand;
+             System.out.println(Arr_chance[i]);
+         }
+     }
+ }
 
 
 /* Tales form the Wastelands ___ gatcha game
