@@ -1,11 +1,23 @@
 package Units;
 
+
+import java.awt.FlowLayout;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
 public class Rylanor {
 
-    private String nume="Rylanor (Dreadnoght)";
-    protected String title="The Ancient of Rites";
+    private String nume="Rylanor the Unyielding";
+    protected String title="Ancient of Rites";
 
-    private double unit_numer=1.0;
+    protected String imagePath = "C://proj2_poo//Imagini_unitati//Rylanor.png";
+
+    private int unit_id=1;
 
     public int currect_level=1;
 
@@ -15,9 +27,9 @@ public class Rylanor {
     private int base_def=900;
     private int base_hp=7000;
 
-    public int current_atk=0;
-    public int current_def=0;
-    public int current_hp=0;
+    public int current_atk=base_atk;
+    public int current_def=base_def;
+    public int current_hp=base_hp;
 
     private int max_atk=3000;
     private int max_def=0;
@@ -58,4 +70,27 @@ public class Rylanor {
     public  void setCurrent_hp(){
         this.current_hp=base_hp+(currect_level*grt_rate);
     }
+
+    public void LoadImageApp() {
+        try {
+            BufferedImage img= ImageIO.read(new File("C://proj2_poo//Imagini_unitati//Rylanor.png"));
+        } catch (IOException e) {
+        }
+    }
+
 }
+/*
+public void DisplayImage() throws IOException{
+
+    BufferedImage img= ImageIO.read(new File("C://proj2_poo//Imagini_unitati//Rylanor.png"));
+    ImageIcon icon=new ImageIcon(img);
+    JFrame frame=new JFrame();
+    frame.setLayout(new FlowLayout());
+    frame.setSize(200,300);
+    JLabel lbl=new JLabel();
+    lbl.setIcon(icon);
+    frame.add(lbl);
+    frame.setVisible(true);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+}
+ */

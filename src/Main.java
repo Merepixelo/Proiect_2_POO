@@ -1,22 +1,60 @@
  /* double[] Arr_chance = { 1.0,2.0,3.0,4.0};*/
+import GUI.Placeholder;
+
+import java.awt.*;
 import java.lang.Math;
+import javax.swing.*;
 
- public class Main {
+import java.io.IOException;
 
-     public static void main(String[] args) {
+/*
+http://coddingbuddy.com/article/55457394/how-to-set-background-image-in-java
+ */
 
-         //Vectorul care stocheaza datele aleatorii
+ public class Main extends javax.swing.JFrame{
+     public static void main(String[] args) throws Exception{
+
+
+
          int[] Arr_chance;
          Arr_chance=new int [10];
          int range=4-1+1;//max-min-1
 
+
+         //Vectorul care stocheaza datele aleatorii pt roll de 10
          for(int i=0;i<10;i++){
              int rand=(int)(Math.random()*range)+1;
              Arr_chance[i] = rand;
              System.out.println(Arr_chance[i]);
          }
+
+         System.out.println("\n");
+
+         //Vectorul care stocheaza datele aleatorii pt roll de 1
+         for(int i=0;i<1;i++){
+             int rand=(int)(Math.random()*range)+1;
+             Arr_chance[i] = rand;
+             System.out.println(Arr_chance[i]);
+         }
+
+
+        // r.LoadImageApp();
+
+         JFrame frame=new JFrame("gatcha");
+         frame.setContentPane(new Placeholder().myPanel);
+         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+         frame.pack();
+
+
+
+         frame.setVisible(true);
      }
+
+
+
  }
+
+
 
 
 /* Tales form the Wastelands ___ gatcha game

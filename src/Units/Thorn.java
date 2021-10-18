@@ -5,7 +5,9 @@ public class Thorn {
     private String nume="Thorn";
     protected String title="The Undanted";
 
-    private double unit_numer=3.0;
+    private int unit_id=3;
+
+    protected String imagePath = "C://proj2_poo//Imagini_unitati//Thorn.png";
 
     protected int grt_rate=5;
 
@@ -15,9 +17,9 @@ public class Thorn {
     private int base_def=700;
     private int base_hp=8000;
 
-    public int current_atk=0;
-    public int current_def=0;
-    public int current_hp=0;
+    public int current_atk=base_atk;
+    public int current_def=base_def;
+    public int current_hp=base_hp;
 
     private int max_atk=0;
     private int max_def=0;

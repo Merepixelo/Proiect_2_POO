@@ -4,7 +4,9 @@ public class Dony {
     private String nume="Dony Salvadore";
     protected String title="Deadeye Drunk";
 
-    private double unit_numer=2.0;
+    protected String imagePath = "C://proj2_poo//Imagini_unitati//Salvadore.png";
+
+    private int unit_id=2;
 
     protected int grt_rate=5;
 
@@ -14,9 +16,9 @@ public class Dony {
     private int base_def=600;
     private int base_hp=5000;
 
-    public int current_atk=0;
-    public int current_def=0;
-    public int current_hp=0;
+    public int current_atk=base_atk;
+    public int current_def=base_def;
+    public int current_hp=base_hp;
 
     private int max_atk=0;
     private int max_def=0;
