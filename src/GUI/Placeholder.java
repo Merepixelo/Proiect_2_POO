@@ -69,92 +69,92 @@ public class Placeholder {
                             Arr_chance[i] = rand;
                             System.out.println(" "+Arr_chance[i]);
 
-                            if(Arr_chance[i]==1){
+                            if(Arr_chance[0]==1){
                                 Summ1.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[0]==2){
                                 Summ1.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[0]==3){
                                 Summ1.setText("Thorn");
                             }else
                                 Summ1.setText("Kryptmann");
 
-                            if(Arr_chance[i+1]==1){
+                            if(Arr_chance[1]==1){
                                 Summ2.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[1]==2){
                                 Summ2.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[1]==3){
                                 Summ2.setText("Thorn");
                             }else
                                 Summ2.setText("Kryptmann");
 
-                            if(Arr_chance[i+2]==1){
+                            if(Arr_chance[2]==1){
                                 Summ3.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[2]==2){
                                 Summ3.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[2]==3){
                                 Summ3.setText("Thorn");
                             }else
                                 Summ3.setText("Kryptmann");
 
-                            if(Arr_chance[i+3]==1){
+                            if(Arr_chance[3]==1){
                                 Summ4.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[3]==2){
                                 Summ4.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[3]==3){
                                 Summ4.setText("Thorn");
                             }else
                                 Summ4.setText("Kryptmann");
 
-                            if(Arr_chance[i+4]==1){
+                            if(Arr_chance[4]==1){
                                 Summ5.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[4]==2){
                                 Summ5.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[4]==3){
                                 Summ5.setText("Thorn");
                             }else
                                 Summ5.setText("Kryptmann");
 
-                            if(Arr_chance[i+5]==1){
+                            if(Arr_chance[5]==1){
                                 Summ6.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[5]==2){
                                 Summ6.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[5]==3){
                                 Summ6.setText("Thorn");
                             }else
                                 Summ6.setText("Kryptmann");
 
-                            if(Arr_chance[i+6]==1){
+                            if(Arr_chance[6]==1){
                                 Summ7.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[6]==2){
                                 Summ7.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[6]==3){
                                 Summ7.setText("Thorn");
                             }else
                                 Summ7.setText("Kryptmann");
 
-                            if(Arr_chance[i+7]==1){
+                            if(Arr_chance[7]==1){
                                 Summ8.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[7]==2){
                                 Summ8.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[7]==3){
                                 Summ8.setText("Thorn");
                             }else
                                 Summ8.setText("Kryptmann");
 
-                            if(Arr_chance[i+8]==1){
+                            if(Arr_chance[8]==1){
                                 Summ9.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[8]==2){
                                 Summ9.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[8]==3){
                                 Summ9.setText("Thorn");
                             }else
                                 Summ9.setText("Kryptmann");
 
-                            if(Arr_chance[i+9]==1){
+                            if(Arr_chance[9]==1){
                                 Summ10.setText("Rylanor");
-                            }else if(Arr_chance[i]==2){
+                            }else if(Arr_chance[9]==2){
                                 Summ10.setText("Dony Salvadore");
-                            }else if(Arr_chance[i]==3){
+                            }else if(Arr_chance[9]==3){
                                 Summ10.setText("Thorn");
                             }else
                                 Summ10.setText("Kryptmann");
