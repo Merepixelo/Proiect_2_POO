@@ -1,6 +1,10 @@
+package Units;
+
 public interface IUnits {
     //mostenite
-    public int irl_money_conversion( int irl_money,int itg_currency,int conv_rate);
+    public abstract void hit();
+
+
 
 
 

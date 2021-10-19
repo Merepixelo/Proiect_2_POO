@@ -8,21 +8,23 @@ public class Dony {
 
     private int unit_id=2;
 
+    private int melee_dmg=100;
+    private int range_dmg=110;
+
+    public int start_level=1;
+    public int currect_level=0;
+    public int max_level=100;
+
     protected int grt_rate=5;
 
-    public int currect_level=1;
-
-    private int base_atk=1000;
-    private int base_def=600;
-    private int base_hp=5000;
+    private int base_atk=50;
+    private int base_def=50;
+    private int base_hp=50;
 
     public int current_atk=base_atk;
     public int current_def=base_def;
     public int current_hp=base_hp;
 
-    private int max_atk=0;
-    private int max_def=0;
-    private int max_hp=0;
 
     //Getteri
     public String getNume(){
@@ -35,6 +37,7 @@ public class Dony {
     public int getCurrect_level(){
         return  currect_level;
     }
+
     public int getCurrent_atk(){
         return current_atk;
     }
@@ -44,20 +47,19 @@ public class Dony {
     public  int getCurrent_hp(){
         return current_hp;
     }
+
     //Setteri
     public void setCurrect_level(int currect_level) {
-        this.currect_level = currect_level;
-    }
-    public  void setCurrent_atk(){
-        this.current_atk=base_atk+(currect_level*grt_rate);
+        if(this.currect_level<this.max_level){
+            this.currect_level+=1;
+            System.out.println("Level reached..."+this.currect_level);
+            this.current_hp=this.current_hp+(this.grt_rate*100);
+            this.current_atk=this.current_atk+(this.grt_rate*100);
+            this.current_def=this.current_def+(this.grt_rate*100);
+        }
+        else System.out.println("Max level reached...");
+
     }
 
-    public  void setCurrent_def(){
-        this.current_def=base_def+(currect_level*grt_rate);
-    }
-
-    public  void setCurrent_hp(){
-        this.current_hp=base_hp+(currect_level*grt_rate);
-    }
 
 }

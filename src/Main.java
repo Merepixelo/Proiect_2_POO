@@ -1,8 +1,12 @@
  /* double[] Arr_chance = { 1.0,2.0,3.0,4.0};*/
 import GUI.Placeholder;
+import Units.Rylanor;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.lang.Math;
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 import java.io.IOException;
@@ -11,8 +15,8 @@ import java.io.IOException;
 http://coddingbuddy.com/article/55457394/how-to-set-background-image-in-java
  */
 
- public class Main extends javax.swing.JFrame{
-     public static void main(String[] args) throws Exception{
+ public class Main extends JFrame{
+     public static void main(String[] args) throws IOException{
 
 
 
@@ -40,19 +44,63 @@ http://coddingbuddy.com/article/55457394/how-to-set-background-image-in-java
 
         // r.LoadImageApp();
 
+
          JFrame frame=new JFrame("gatcha");
          frame.setContentPane(new Placeholder().myPanel);
          frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
          frame.pack();
 
-
+         ImageIcon background=new ImageIcon("C:\\proj2_poo\\Backgrounds");
+         Image img=background.getImage();
+         Image temp=img.getScaledInstance(500,600,Image.SCALE_SMOOTH);
+         background=new ImageIcon(temp);
+         JLabel back=new JLabel(background);
+         back.setLayout(null);
+         back.setBounds(0,0,500,600);
 
          frame.setVisible(true);
      }
 
-
-
  }
+
+
+/*
+
+ try {
+             final Image backgroundImage = javax.imageio.ImageIO.read(new File("C:\\proj2_poo\\Backgrounds"));
+             frame.setContentPane(new JPanel(new BorderLayout()) {
+                 @Override public void paintComponent(Graphics g) {
+                     g.drawImage(backgroundImage, 0, 0, null);
+                 }
+             });
+         } catch (IOException e) {
+             throw new RuntimeException(e);
+         }
+
+
+ */
+ /*
+   ImageIcon img=new ImageIcon("C://proj2_poo//Backgrounds");
+     JLabel backgound;
+
+     @Override
+     public void setSize(Dimension d) {
+         super.setSize(1200,700);
+     }
+
+     @Override
+     public void setLayout(LayoutManager manager) {
+         super.setLayout(null);
+     }
+     ImageIcon img=new ImageIcon("Wasteland.jpg");
+
+     public void setBackgound(JLabel backgound) {
+         this.backgound = new JLabel("",JLabel.CENTER);
+         backgound.setBounds(0,0,1200,700);
+         add(backgound);
+         setVisible(true);
+     }
+  */
 
 
 

@@ -1,39 +1,42 @@
 package Units;
 
-
+import javax.swing.*;
 import java.awt.FlowLayout;
-import java.awt.image.BufferedImage;
+
 import java.io.File;
 import java.io.IOException;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 
-public class Rylanor {
+
+
+public abstract class Rylanor implements IUnits{
 
     private String nume="Rylanor the Unyielding";
     protected String title="Ancient of Rites";
-
+private String clasa;
     protected String imagePath = "C://proj2_poo//Imagini_unitati//Rylanor.png";
 
     private int unit_id=1;
 
-    public int currect_level=1;
+    public int start_level=1;
+    public int currect_level=0;
+    public int max_level=100;
 
     protected int grt_rate=5;
 
-    private int base_atk=1500;
-    private int base_def=900;
-    private int base_hp=7000;
+    private int base_atk=50;
+    private int base_def=50;
+    private int base_hp=50;
 
     public int current_atk=base_atk;
     public int current_def=base_def;
     public int current_hp=base_hp;
 
-    private int max_atk=3000;
-    private int max_def=0;
-    private int max_hp=0;
+    //Mostenire
+    // dmg melee & dmg ranged
+    public void hit(int melee_dmg,int range_dmg) {
+        melee_dmg=this.current_atk-30;
+        range_dmg=this.current_atk-60;
+    }
 
 //Getteri
     public String getNume(){
@@ -46,6 +49,7 @@ public class Rylanor {
     public int getCurrect_level(){
         return  currect_level;
     }
+
     public int getCurrent_atk(){
         return current_atk;
     }
@@ -55,30 +59,25 @@ public class Rylanor {
     public  int getCurrent_hp(){
         return current_hp;
     }
+
 //Setteri
     public void setCurrect_level(int currect_level) {
-        this.currect_level = currect_level;
-    }
-    public  void setCurrent_atk(){
-        this.current_atk=base_atk+(currect_level*grt_rate);
-    }
+        if(this.currect_level<this.max_level){
+            this.currect_level+=1;
+            System.out.println("Level reached..."+this.currect_level);
+            this.current_hp=this.current_hp+(this.grt_rate*100);
+            this.current_atk=this.current_atk+(this.grt_rate*100);
+            this.current_def=this.current_def+(this.grt_rate*100);
+        }
+        else {
+                System.out.println("Max level reached...");
 
-    public  void setCurrent_def(){
-        this.current_def=base_def+(currect_level*grt_rate);
-    }
-
-    public  void setCurrent_hp(){
-        this.current_hp=base_hp+(currect_level*grt_rate);
-    }
-
-    public void LoadImageApp() {
-        try {
-            BufferedImage img= ImageIO.read(new File("C://proj2_poo//Imagini_unitati//Rylanor.png"));
-        } catch (IOException e) {
         }
     }
 
 }
+
+
 /*
 public void DisplayImage() throws IOException{
 
