@@ -1,6 +1,6 @@
 package Units;
 
-public class Kryptmann {
+public abstract class Kryptmann implements IUnits{
 
     private String nume="Kryptmann";
     protected String title="Aspiring Inqusitor";
@@ -23,6 +23,12 @@ public class Kryptmann {
     public int current_def=base_def;
     public int current_hp=base_hp;
 
+    //Mostenire
+    // dmg melee & dmg ranged
+    public void hit(int melee_dmg,int range_dmg) {
+        melee_dmg=this.current_atk-30;
+        range_dmg=this.current_atk-60;
+    }
 
     //Getteri
     public String getNume(){

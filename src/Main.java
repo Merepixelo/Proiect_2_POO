@@ -20,27 +20,6 @@ http://coddingbuddy.com/article/55457394/how-to-set-background-image-in-java
 
 
 
-         int[] Arr_chance;
-         Arr_chance=new int [10];
-         int range=4-1+1;//max-min-1
-
-
-         //Vectorul care stocheaza datele aleatorii pt roll de 10
-         for(int i=0;i<10;i++){
-             int rand=(int)(Math.random()*range)+1;
-             Arr_chance[i] = rand;
-             System.out.println(Arr_chance[i]);
-         }
-
-         System.out.println("\n");
-
-         //Vectorul care stocheaza datele aleatorii pt roll de 1
-         for(int i=0;i<1;i++){
-             int rand=(int)(Math.random()*range)+1;
-             Arr_chance[i] = rand;
-             System.out.println(Arr_chance[i]);
-         }
-
 
         // r.LoadImageApp();
 
