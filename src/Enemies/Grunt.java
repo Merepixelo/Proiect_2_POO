@@ -23,5 +23,22 @@ public abstract class Grunt extends Weapon {
         this.melee = melee;
     }
 
+
+    class A {
+        void dead() {
+
+        }
+        boolean alive(boolean invt) {
+            if (alive(true)){
+                System.out.println("Alive");
+            }else System.out.println("Dead");
+            return false;}
+    }
+    class B extends A {
+        void dead() {
+
+        }
+    }
+
 }
 
